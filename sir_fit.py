@@ -109,10 +109,12 @@ def main():
                         help="Parametr gamma")
     parser.add_argument("--plot", action="store_true",
                         help="Plot pro porovnání dat")
+    parser.add_argument("--smooth", type=int, default = 7,
+                        help = "Kolik dní bere konvoluční obdélník")
     args = parser.parse_args()
 
     # načtení dat
-    daily, cumulative, dates = load_series(args.path)
+    daily, cumulative, dates = load_series(args.path, smooth=args.smooth)
     N = args.population
     t = np.arange(len(dates))
 
