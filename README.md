@@ -1,1 +1,1 @@
-Byl jsem líný opakovaně používané funkce dát do vlastního skriptu, tak jsem je pouze překopírovával. Celý kód je tedy velmi poslepován. 
+V rámci pouhého prototypování jsem nedal vícekrát užívané funkce do vlastního souboru, který bych následně includnul, nýbrž jsem je pouze překopírovával. Celý kód je tedy velmi poslepován. Na funkčnost jenoho celku to však nemá žádný vliv.
